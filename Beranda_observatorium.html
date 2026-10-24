@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Observatorium Bosscha</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!--Navbar-->
+        <header>
+            <div class="header-content">
+            <div class="logo">
+                <img src="https://bosscha.itb.ac.id/img/logo.svg" alt="Logo ITB" width="50" height="50">
+            </div>
+            <nav>
+                <a href="Beranda_observatorium.html">Beranda</a>
+                <a href="Galeri.html">Galeri</a>
+                <a href="Panduan.html">Panduan</a>
+                <a href="Kontak.html">Kontak</a>
+            </nav>
+
+        <!--sidebar-->
+                <button class="sidebar" onclick="toggleSidebar()">☰</button>    
+            <aside class="sidebar" id="sidebar">
+                <h2>Filter Koleksi</h2>
+
+                <div class="filter-group">
+                    <h3>Kategori</h3>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="teleskop">
+                        Teleskop
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="pelat-kaca">
+                        Pelat Kaca
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="sejarah">
+                        Sejarah & Tokoh
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="terbitan">
+                        Terbitan & Edukasi
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Jenis Media</h3>
+
+                    <label>
+                        <input type="checkbox" name="media" value="foto">
+                        Foto
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="artikel">
+                        Artikel
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="video">
+                        Video
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="pdf">
+                        PDF / Dokumen
+                    </label>
+                </div>
+
+            <button class="filter-button" onclick="applyFilter()">Terapkan Filter</button>                
+            <button class="reset-button" onclick="resetFilter()">Reset Filter</button>
+            </aside>
+            </div>
+        </header>
+     
+     <main>
+
+    <section class="hero">
+
+    <!-- FOTO BACKGROUND -->
+    <div class="hero-background">
+        <img src="https://itb.ac.id/files/dokumentasi/_DSC0133.JPG"
+             alt="Observatorium Bosscha">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <!-- KOLOM PENCARIAN -->
+        <section class="search-section">
+            <input type="text" placeholder="Cari...">
+            <button onclick="search()">Cari</button>
+        </section>
+
+        <!-- HEADLINE -->
+        <div class="hero-text">
+
+            <span class="small-line"></span>
+
+            <h1>Observatorium Bosscha</h1>
+
+            <p>
+                Jelajahi koleksi digital astronomi yang berisi
+                dokumentasi teleskop, pelat kaca, terbitan ilmiah,
+                serta sejarah dan tokoh observatorium.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!--TOPIK-->
+        <section class="topics">
+            
+            <!--TOPIK1-->
+            <article class="topic-card">
+               
+                <div class="topic-image">
+                    <img src="Image/zeiss4.jpg" alt="Instrumen & Dokumentasi Astronomi" width="300" height="200">
+                </div>
+
+                <div class="topic-content">
+                    
+
+                    <h2>Instrumen & Dokumentasi Astronomi</h2>
+                    <p>Pelajari tentang instrumen dan dokumentasi astronomi yang digunakan di Observatorium Bosscha.</p>
+                    <a href="Instrumen_Dokumentasi_Astronomi.html">Lihat Koleksi<span>-></span></a>
+                </div>
+            </article>
+
+            <!--TOPIK2-->
+            <article class="topic-card">
+                <div class="topic-image">
+                    <img src="Image/workshop pelat 001-01.webp" alt="Digitalisasi Pelat Kaca (Astrofotografi)" width="300" height="200">
+                </div>
+
+                <div class="topic-content">
+                    
+
+                    <h2>Digitalisasi Pelat Kaca (Astrofotografi)</h2>
+                    <p>Jelajahi koleksi digitalisasi pelat kaca yang digunakan untuk astrofotografi di Observatorium Bosscha.</p>
+                    <a href="Artikel_Liputan_Digitalisasi_PelatKaca.html">Lihat Koleksi<span>-></span></a>
+                </div>
+            </article>
+
+            <!--TOPIK3-->
+            <article class="topic-card">
+                <div class="topic-image">
+                    <img src="Image/edukasi publik.png" alt="Terbitan Ilmiah & Dokumen Edukasi Publik" width="300" height="200">
+                </div>
+
+                <div class="topic-content">
+                    
+
+                    <h2>Terbitan Ilmiah & Dokumen Edukasi Publik (Arsip Digital)</h2>
+                    <p>Temukan terbitan ilmiah dan dokumen edukasi publik yang tersedia dalam arsip digital.</p>
+                    <a href="Terbitan_Ilmiah_Dokumen_Edukasi_Publik.html">Lihat Koleksi<span>-></span></a>
+                </div>
+            </article>
+
+           
+            <!--TOPIK4-->
+            <article class="topic-card">
+                <div class="topic-image">
+                    <img src="Image/KAR-Bosscha-dan-Voute.jpg" alt="Dokumentasi Sejarah & Tokoh (Foto & Teks)" width="300" height="200">
+                </div>
+
+                <div class="topic-content">
+                    
+
+                    <h2>Dokumentasi Sejarah & Tokoh (Foto & Teks)</h2>
+                    <p>Telusuri dokumentasi sejarah dan tokoh terkait Observatorium Bosscha melalui foto dan teks.</p>
+                    <a href="Dokumentasi_Sejarah_Tokoh.html">Lihat Koleksi<span>-></span></a>
+                </div>
+
+            </article>
+        
+        </section>
+
+        <!--LOKASI-->
+        <section class="Location">
+
+            <div class="location-card">
+                <h2>Lokasi Observatorium Bosscha</h2>
+                <p>Observatorium Bosscha terletak di Lembang, Jawa Barat, Indonesia. Berikut adalah peta lokasi:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.549586677146!2d107.6158674!3d-6.8245026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e11292b0db83%3A0xc0f73eee035e3ffd!2sObservatorium%20Bosscha!5e0!3m2!1sen!2sid!4v1790406442686!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+        </section>
+
+        <!--JAM OPERASIONAL-->
+        <section class="operational-hours">
+            <h2>Jam Operasional</h2>
+            <p>Observatorium Bosscha buka untuk kunjungan umum pada hari Senin hingga Jumat, pukul 09.00 - 16.00 WIB.</p>
+        </section>
+        
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2026 Observatorium Bosscha. ║ Aulya Rahma ║ 250911726053.</p>
+    </footer>
+
+    </body>
+</html>

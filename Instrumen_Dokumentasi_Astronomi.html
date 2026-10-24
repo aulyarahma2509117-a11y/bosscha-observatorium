@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instrumen Dokumentasi Astronomi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+     <body>
+
+        <!--JUDUL WEBSITE-->
+        <header>
+            <div class="header-content">
+            <div class="logo">
+                <img src="https://bosscha.itb.ac.id/img/logo.svg" alt="Logo ITB" width="50" height="50">
+            </div>
+            <nav>
+                <a href="Beranda_observatorium.html">Beranda</a>
+                <a href="Galeri.html">Galeri</a>
+                <a href="Panduan.html">Panduan</a>
+                <a href="Kontak.html">Kontak</a>
+            </nav>
+
+
+                <button class="sidebar" onclick="toggleSidebar()">☰</button>           
+            <aside class="sidebar" id="sidebar">
+                <h2>Filter Koleksi</h2>
+
+                <div class="filter-group">
+                    <h3>Kategori</h3>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="teleskop">
+                        Teleskop
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="pelat-kaca">
+                        Pelat Kaca
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="sejarah">
+                        Sejarah & Tokoh
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="terbitan">
+                        Terbitan & Edukasi
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Jenis Media</h3>
+
+                    <label>
+                        <input type="checkbox" name="media" value="foto">
+                        Foto
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="artikel">
+                        Artikel
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="video">
+                        Video
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="pdf">
+                        PDF / Dokumen
+                    </label>
+                </div>
+
+            <button class="filter-button" onclick="applyFilter()">Terapkan Filter</button>                
+            <button class="reset-button" onclick="resetFilter()">Reset Filter</button>
+            </aside>
+            </div>
+        </header>
+     
+
+    <main>
+
+    <section class="hero">
+
+    <!-- FOTO BACKGROUND -->
+    <div class="hero-background">
+        <img src="Image/Observatorium-Bosscha-Lembang-1.jpg"
+             alt="Observatorium Bosscha">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <!-- KOLOM PENCARIAN -->
+        <section class="search-section">
+            <input type="text" placeholder="Cari...">
+            <button onclick="search()">Cari</button>
+        </section>
+
+        <!-- HEADLINE -->
+        <div class="hero-text">
+
+            <span class="small-line"></span>
+
+            <h1>Instrumen Dokumentasi Astronomi</h1>
+
+            <p>
+                Berbagai macam instrumen (Teleskop) yang digunakan dalam Observatorium Bosscha untuk mengamati dan mendokumentasikan kegiatan astronomi.
+            </p>
+
+        </div>
+
+    </div>
+
+    </section>
+
+        <section class="search-form-section">
+    <h2>Formulir Penelusuran Informasi Koleksi</h2>
+    <p>Gunakan formulir ini untuk menentukan informasi instrumen astronomi yang ingin ditelusuri.</p>
+
+    <form action="#" method="get">
+
+        <div class="form-group">
+            <label for="kata-kunci">Kata kunci instrumen</label>
+            <input
+                type="text"
+                id="kata-kunci"
+                name="kata-kunci"
+                placeholder="Contoh: teleskop Zeiss"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="tanggal">Tanggal pengamatan (opsional)</label>
+            <input
+                type="date"
+                id="tanggal"
+                name="tanggal"
+            >
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Informasi yang dicari</legend>
+
+            <label>
+                <input type="radio" name="informasi" value="sejarah" required>
+                Sejarah instrumen
+            </label>
+
+            <label>
+                <input type="radio" name="informasi" value="spesifikasi">
+                Spesifikasi teknis
+            </label>
+
+            <label>
+                <input type="radio" name="informasi" value="penggunaan">
+                Fungsi dan penggunaan
+            </label>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend>Dokumentasi yang diminati</legend>
+
+            <label>
+                <input type="checkbox" name="dokumentasi" value="foto">
+                Foto instrumen
+            </label>
+
+            <label>
+                <input type="checkbox" name="dokumentasi" value="video">
+                Video dokumentasi
+            </label>
+
+            <label>
+                <input type="checkbox" name="dokumentasi" value="dokumen">
+                Dokumen pendukung
+            </label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="jenis-instrumen">Jenis instrumen</label>
+            <select id="jenis-instrumen" name="jenis-instrumen" required>
+                <option value="">Pilih jenis instrumen</option>
+                <option value="refraktor">Teleskop refraktor</option>
+                <option value="schmidt">Teleskop Schmidt</option>
+                <option value="lainnya">Instrumen lainnya</option>
+            </select>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit">Kirim Pencarian</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+</section>
+
+        <section class="collection-section">
+
+            <h2>Instrumen Astronomi (Teleskop)</h2>
+
+            <div class="collection-list">
+
+            
+            <!--TELESKOP GANDA ZEISS-->
+            <article class="collection-card">
+            <section id="zeiss" class="section">
+            <div class="collection-item">
+                <h3>Teleskop Refraktor Ganda Zeiss</h3>
+                <img src="https://bosscha.itb.ac.id/id/tentang/instrumen/zeiss/zeiss4.jpg" alt="Teleskop Refraktor Zeiss" width="600" height="400">
+            </div>
+                <p>
+                 Satu-satunya gedung kubah di Observatorium Bosscha yang telah menjadi landmark Bandung utara selama lebih dari 85 tahun.
+                </p>
+
+                <a href="Teleskop%20zeiss.html">
+                    More Information &gt;
+                </a>
+            </article>
+
+            <!--TELESKOP BOSSCHA ROBOTIC TELESCOPE-->
+            <article class="collection-card">
+            <section id="BRT" class="section">
+            <div class="collection-item">
+                <h3>Bosscha Robotic Telescope (BRT)</h3>
+                <img src="Image/brt.jpg" alt="Bosscha Robotic Telescope (BRT)" width="600" height="400">
+            </div> 
+                <p>
+                Teleskop yang terpasang di gedung surya ini dapat berjalan sepenuhnya secara otomatis dan beradaptasi terhadap kondisi langit dan lingkungan.                 
+                </p>
+
+                <a href="detail-brt.html">
+                    More Information &gt;
+                </a>
+            </article>
+
+            
+
+            <!--TELESKOP STEVia-->
+            <article class="collection-card">
+            <section id="STEVia" class="section">
+            <div class="collection-item">
+                <h3>Teleskop STEVia</h3>
+                <img src="https://bosscha.itb.ac.id/id/tentang/instrumen/stevia/stevia1.jpeg" alt="Teleskop STEVia" width="600" height="400">
+            </div>  
+                <p>
+                   Teleskop STEVia (Survey Telescope for Exoplanet and Variable star) adalah sistem teleskop baru di Observatorium Bosscha yang dibangun pada tahun 2013.
+                </p>
+
+                <a href="detail-stevia.html">
+                    More Information &gt;
+                </a>
+            </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Observatorium Bosscha. ║ Aulya Rahma ║ 250911726053.</p>  
+    </footer>
+
+
+    </body>
+</html>

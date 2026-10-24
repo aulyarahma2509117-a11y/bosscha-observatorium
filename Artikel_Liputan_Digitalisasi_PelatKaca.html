@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Artikel Liputan Digitalisasi Pelat Kaca</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+     <body>
+
+        <!--JUDUL WEBSITE-->
+        <header>
+            <div class="header-content">
+            <div class="logo">
+                <img src="https://bosscha.itb.ac.id/img/logo.svg" alt="Logo ITB" width="50" height="50">
+            </div>
+            <nav>
+                <a href="Beranda_observatorium.html">Beranda</a>
+                <a href="Galeri.html">Galeri</a>
+                <a href="Panduan.html">Panduan</a>
+                <a href="Kontak.html">Kontak</a>
+            </nav>
+
+
+                <button class="sidebar" onclick="toggleSidebar()">☰</button>           
+            <aside class="sidebar" id="sidebar">
+                <h2>Filter Koleksi</h2>
+
+                <div class="filter-group">
+                    <h3>Kategori</h3>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="teleskop">
+                        Teleskop
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="pelat-kaca">
+                        Pelat Kaca
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="sejarah">
+                        Sejarah & Tokoh
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="kategori" value="terbitan">
+                        Terbitan & Edukasi
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Jenis Media</h3>
+
+                    <label>
+                        <input type="checkbox" name="media" value="foto">
+                        Foto
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="artikel">
+                        Artikel
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="video">
+                        Video
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="media" value="pdf">
+                        PDF / Dokumen
+                    </label>
+                </div>
+
+            <button class="filter-button" onclick="applyFilter()">Terapkan Filter</button>                
+            <button class="reset-button" onclick="resetFilter()">Reset Filter</button>
+            </aside>
+            </div>
+        </header>
+     
+
+    <main>
+
+         <!-- FOTO UTAMA -->
+       <section class="article-hero">
+
+    <div class="article-hero-image">
+        <img src="Image/pelat-kaca.jpeg"
+             alt="Digitalisasi Pelat Kaca">
+    </div>
+
+    <div class="article-hero-overlay"></div>
+
+    <div class="article-hero-content">
+
+        <span class="article-line"></span>
+
+        <h1>
+            Digitalisasi<br>
+            Pelat Kaca
+        </h1>
+
+        <p>
+            Mengenal koleksi pelat fotografi astronomi
+            dan proses mengubahnya menjadi data digital
+            untuk menjaga rekaman pengamatan masa lalu.
+        </p>
+
+    </div>
+
+</section>
+
+
+        <!-- MENGAPA DIDIGITALISASI -->
+        <section class="why-digital">
+
+            <div class="why-image">
+
+                <img
+                    src="Image/workshop pelat 001-01.webp"
+                    alt="Koleksi pelat fotografi astronomi">
+
+            </div>
+
+            <div class="why-text">
+
+                <h2>
+                    Mengapa Pelat Kaca Didigitalisasi?
+                </h2>
+
+                <p>
+                    Pelat kaca merupakan benda fisik yang perlu
+                    dirawat dengan hati-hati karena dapat mengalami
+                    kerusakan. Kondisi pelat juga dapat berubah
+                    akibat penyimpanan dan usia.
+                </p>
+
+                <p>
+                    Digitalisasi dilakukan dengan membuat salinan
+                    dalam bentuk digital sehingga informasi yang
+                    terdapat pada pelat dapat disimpan, dipelajari,
+                    dan digunakan kembali tanpa harus terus-menerus
+                    menggunakan benda aslinya.
+                </p>
+
+                <p>
+                    Observatorium Bosscha telah melakukan upaya
+                    digitalisasi pelat fotografi sejak tahun 2015.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TAHAPAN DIGITALISASI -->
+        <section class="process-section">
+
+            <div class="section-heading">
+
+                <p>PROSES DIGITALISASI</p>
+
+                <h2>
+                    Dari Pelat Kaca Menjadi Data Digital
+                </h2>
+
+                <p>
+                    Digitalisasi tidak hanya dilakukan dengan memindai
+                    pelat. Setiap tahap dilakukan agar informasi dan
+                    kondisi koleksi tetap dapat dipertahankan.
+                </p>
+
+            </div>
+
+
+            <div class="process-flow">
+
+                <div class="process-step">
+
+                    <h3>Identifikasi</h3>
+
+                    <p>
+                        Mencatat informasi pelat seperti tanggal
+                        pengamatan, objek yang diamati, dan teleskop
+                        yang digunakan.
+                    </p>
+
+                </div>
+
+
+                <span class="arrow">→</span>
+
+
+                <div class="process-step">
+
+                    <h3>Pemeriksaan</h3>
+
+                    <p>
+                        Memeriksa kondisi fisik pelat dan menangani
+                        debu atau kotoran dengan hati-hati.
+                    </p>
+
+                </div>
+
+
+                <span class="arrow">→</span>
+
+
+                <div class="process-step">
+
+                    <h3>Scanning</h3>
+
+                    <p>
+                        Memindai pelat menggunakan perangkat yang
+                        mampu menghasilkan gambar digital beresolusi tinggi.
+                    </p>
+
+                </div>
+
+
+                <span class="arrow">→</span>
+
+
+                <div class="process-step">
+
+                    <h3>Pengolahan</h3>
+
+                    <p>
+                        Mengolah hasil pemindaian agar gambar dan
+                        informasi objek dapat digunakan kembali.
+                    </p>
+
+                </div>
+
+
+                <span class="arrow">→</span>
+
+
+                <div class="process-step">
+
+                    <h3>Penyimpanan</h3>
+
+                    <p>
+                        Menyimpan hasil digitalisasi dan memberikan
+                        metadata agar koleksi mudah ditemukan.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEO -->
+        <section class="article-video">
+
+            <div class="section-heading">
+
+                <p>VIDEO PEMBELAJARAN</p>
+
+                <h2>
+                    Astronomical Glass Plate Photographs
+                </h2>
+
+                <p>
+                    Video ini membahas foto astronomi yang direkam
+                    menggunakan pelat kaca serta nilai sejarah dan
+                    ilmiah dari koleksi tersebut.
+                </p>
+
+            </div>
+
+
+            <div class="video-wrapper">
+
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/noZk9lCAhEo?si=CJ5d4DI9BD96RjOr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- PEMANFAATAN DATA -->
+        <section class="data-section">
+
+            <div class="section-heading">
+
+                <p>PEMANFAATAN DATA</p>
+
+                <h2>
+                    Dari Arsip Lama Menjadi Data Baru
+                </h2>
+
+                <p>
+                    Hasil digitalisasi dapat digunakan kembali untuk
+                    berbagai kebutuhan pembelajaran dan penelitian
+                    astronomi.
+                </p>
+
+            </div>
+
+
+            <div class="data-list">
+
+                <article>
+                    <h3>Astrometri</h3>
+
+                    <p>
+                        Digunakan untuk mempelajari posisi dan
+                        pergerakan objek langit.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Fotometri</h3>
+
+                    <p>
+                        Digunakan untuk mempelajari tingkat
+                        kecerlangan objek astronomi.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Spektroskopi</h3>
+
+                    <p>
+                        Digunakan untuk mempelajari informasi
+                        dari spektrum cahaya objek astronomi.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PENUTUP -->
+        <section class="article-ending">
+
+            <h2>
+                Menjaga Rekaman Pengamatan Masa Lalu
+            </h2>
+
+            <p>
+                Digitalisasi pelat kaca membantu menjaga rekaman
+                pengamatan astronomi agar tetap dapat dipelajari
+                dan dimanfaatkan pada masa sekarang. Koleksi yang
+                sebelumnya tersimpan dalam bentuk fisik dapat
+                diubah menjadi data digital yang lebih mudah
+                dikelola dan digunakan kembali.
+            </p>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Observatorium Bosscha. ║ Aulya Rahma ║ 250911726053.</p>  
+    </footer>
+
+
+    </body>
+</html>
